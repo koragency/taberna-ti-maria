@@ -1,7 +1,10 @@
-import { Clock, MapPin, Phone } from "lucide-react";
+import { Clock, MapPin, MessageCircle } from "lucide-react";
 import { useLang } from "@/i18n";
 import { Reveal, Kicker } from "@/components/motion";
 import { SardineDivider } from "@/components/Sardine";
+
+export const WHATSAPP_URL = (message) =>
+  `https://wa.me/351912184583?text=${encodeURIComponent(message)}`;
 
 export default function Contact() {
   const { t } = useLang();
@@ -23,12 +26,14 @@ export default function Contact() {
         <Reveal delay={0.12}>
           <a
             data-testid="phone-reservation-button"
-            href="tel:+351912184583"
+            href={WHATSAPP_URL(t.contact.whatsappMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={t.contact.phoneLabel}
             className="group mt-10 inline-flex items-center gap-4 rounded-full bg-white px-8 py-5 shadow-xl shadow-tinta/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-tinta/30"
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-terra text-white transition-colors duration-300 group-hover:bg-azul">
-              <Phone className="h-5 w-5" />
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-verde text-white transition-colors duration-300 group-hover:bg-azul">
+              <MessageCircle className="h-5 w-5" />
             </span>
             <span className="text-left">
               <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-terra">{t.contact.phoneLabel}</span>

@@ -1,9 +1,10 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Phone, UtensilsCrossed } from "lucide-react";
+import { MessageCircle, UtensilsCrossed } from "lucide-react";
 import { useLang } from "@/i18n";
 import { MaskedLine } from "@/components/motion";
 import { FloatingSardines, azulejoTile } from "@/components/Sardine";
+import { WHATSAPP_URL } from "@/components/Contact";
 
 export default function Hero() {
   const { t } = useLang();
@@ -90,10 +91,12 @@ export default function Hero() {
           </button>
           <a
             data-testid="hero-call-button"
-            href="tel:+351912184583"
-            className="group flex items-center gap-2.5 rounded-full border-2 border-azul/40 bg-white/50 px-7 py-3.5 text-sm font-semibold uppercase tracking-widest text-azul transition-all duration-300 hover:border-azul hover:bg-azul hover:text-white"
+            href={WHATSAPP_URL(t.contact.whatsappMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2.5 rounded-full border-2 border-verde/50 bg-white/50 px-7 py-3.5 text-sm font-semibold uppercase tracking-widest text-verde transition-all duration-300 hover:border-verde hover:bg-verde hover:text-white"
           >
-            <Phone className="h-4 w-4 transition-transform duration-300 group-hover:-rotate-12" />
+            <MessageCircle className="h-4 w-4 transition-transform duration-300 group-hover:-rotate-12" />
             {t.hero.ctaBook}
           </a>
         </motion.div>
