@@ -34,7 +34,11 @@ export default function Hero() {
         </motion.p>
 
         <motion.div style={{ y: logoY, scale: logoScale }} className="relative mb-12">
-          <svg viewBox="0 0 200 200" className="animate-spin-slower absolute -inset-7 sm:-inset-10" aria-hidden="true">
+          <svg
+            viewBox="0 0 200 200"
+            className="animate-spin-slower absolute -inset-7 h-[calc(100%+3.5rem)] w-[calc(100%+3.5rem)] sm:-inset-10 sm:h-[calc(100%+5rem)] sm:w-[calc(100%+5rem)]"
+            aria-hidden="true"
+          >
             <defs>
               <path id="ti-maria-ring" d="M100,100 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0" />
             </defs>
