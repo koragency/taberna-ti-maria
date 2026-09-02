@@ -1,0 +1,93 @@
+{
+  "project_title": "Taberna Ti Maria - Petiscos, Vinhos e Cerveja",
+  "archetype": "LUXURY_RUSTIC_TAVERN_EDITORIAL",
+  "target_audience": "Food lovers, wine enthusiasts, locals and tourists seeking authentic Algarve gastronomy, homemade regional petiscos, and an unforgettable warm atmosphere with humor and conviviality.",
+  "emotional_tone": "Warm, lively, humorous, authentic, intimate yet highly professional and elevated gastronomic value.",
+  "brand_identity": {
+    "name": "Taberna Ti Maria",
+    "since": "1954",
+    "slogan": "ÓOOOH Ti Maria, vem cá provar disto!",
+    "chef": {
+      "name": "Senhor Ângelo",
+      "experience_years": 40,
+      "head_chef_years": 20,
+      "philosophy": "Algarve regional culinary heritage made from scratch with 100% local products."
+    },
+    "lore": "Lenda da Maria de Lagos (Algarve coastal myth of maritime flavor and secret petiscos)",
+    "decor_motif": "Sardinhas decorativas (Decorative sardines as section dividers, floating background badges, pattern accents, and animated SVG elements)"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Playfair Display, Cormorant Garamond, or Bodoni Moda (Serif Display with editorial soul)",
+      "subheading": "Cabinet Grotesk or Outfit (Character Sans with warm geometry)",
+      "body": "Plus Jakarta Sans or DM Sans (Readable, clean)",
+      "mono_accent": "JetBrains Mono (For pricing, timestamps, vintage badge labels)"
+    },
+    "scale": {
+      "h1_hero": "text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-none font-serif",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-serif tracking-tight",
+      "h3_title": "text-xl sm:text-2xl font-sans font-semibold",
+      "slogan_display": "text-2xl sm:text-4xl lg:text-5xl font-extrabold italic text-amber-400 font-serif leading-tight"
+    }
+  },
+  "colors": {
+    "mode": "dark_warm_tavern",
+    "palette": {
+      "background": "#0F0D0C",
+      "surface_card": "#1A1715",
+      "surface_elevated": "#26211D",
+      "border_subtle": "rgba(230, 190, 138, 0.12)",
+      "primary_gold": "#E6BE8A",
+      "accent_terracotta": "#D96B43",
+      "accent_sardine_silver": "#A3BAC3",
+      "accent_wine": "#7A1C28",
+      "text_main": "#F5EFEB",
+      "text_muted": "#A89F91"
+    }
+  },
+  "key_features": [
+    "Bilingual Language Switcher (PT / EN) with instant UI translation",
+    "Hero Section featuring prominent circular vintage badge logo ('Ti Maria - Taberna Since 1954') & large kinetic slogan reveal",
+    "Dynamic Interactive Menu (Petiscos, Vinhos, Cervejas) fetched from API with filter categories and search",
+    "Admin Panel Modal for live menu item addition, editing, and price updates",
+    "Legend of Maria de Lagos Storytelling Section with editorial numbered chapters and decorative sardine illustrations",
+    "Chef Senhor Ângelo Tribute Section showcasing 40 years of culinary craft and 20 years as head chef",
+    "Location & Contact Section with Phone-Only Reservation Notice ('Reservas apenas por Telefone / Presencial')",
+    "Animated Sardine Motif floating decorations and rustic tavern grain texture"
+  ],
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1662738221889-2344690f7dc1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHx3aW5lJTIwZ2xhc3MlMjBydXN0aWMlMjB0YXZlcm58ZW58MHx8fHwxNzg4MzM1NzcwfDA&ixlib=rb-4.1.0&q=85",
+    "grilled_sardines": "https://images.unsplash.com/photo-1534121222821-9e2e2936f059?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHxncmlsbGVkJTIwc2FyZGluZXN8ZW58MHx8fHwxNzg4MzM1NzY5fDA&ixlib=rb-4.1.0&q=85",
+    "chef_angelo": "https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxjaGVmJTIwY29va2luZyUyMHJlc3RhdXJhbnR8ZW58MHx8fHwxNzg4MzM1NzY5fDA&ixlib=rb-4.1.0&q=85",
+    "wine_glass": "https://images.unsplash.com/photo-1587920710219-f6f9804dc10d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHx3aW5lJTIwZ2xhc3MlMjBydXN0aWMlMjB0YXZlcm58ZW58MHx8fHwxNzg4MzM1NzcwfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "testing": {
+    "data_testid_convention": "kebab-case",
+    "required_test_ids": [
+      "nav-header",
+      "language-toggle-pt",
+      "language-toggle-en",
+      "brand-logo-large",
+      "brand-slogan",
+      "menu-section",
+      "menu-tab-petiscos",
+      "menu-tab-vinhos",
+      "menu-tab-cervejas",
+      "menu-item-card",
+      "admin-panel-trigger-button",
+      "admin-menu-dialog",
+      "chef-angelo-section",
+      "maria-de-lagos-section",
+      "contact-reservation-section",
+      "phone-reservation-button"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a complete responsive one-page website using React and Tailwind CSS matching the rustic tavern aesthetic.",
+    "Implement language state (pt/en) controlling all page text, titles, menu item descriptions, and badges.",
+    "Place the circular vintage logo 'Ti Maria - TABERNA SINCE 1954' front and center in the hero section at high prominence.",
+    "Include the official slogan 'ÓOOOH Ti Maria, vem cá provar disto!' with animated typography effect.",
+    "Incorporate sardine motifs as subtle floating SVG decorations, section separators, and badge icons.",
+    "Ensure all interactive components and key content blocks have data-testid attributes for testing."
+  ]
+}

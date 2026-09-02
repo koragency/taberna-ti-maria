@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 20 12% 5%;
+        --foreground: 30 27% 94%;
+        --card: 20 11% 9%;
+        --card-foreground: 30 27% 94%;
+        --popover: 20 11% 9%;
+        --popover-foreground: 30 27% 94%;
+        --primary: 35 62% 72%;
+        --primary-foreground: 20 12% 5%;
+        --secondary: 25 13% 15%;
+        --secondary-foreground: 30 27% 94%;
+        --muted: 25 13% 15%;
+        --muted-foreground: 36 9% 61%;
+        --accent: 25 13% 15%;
+        --accent-foreground: 30 27% 94%;
+        --destructive: 0 62% 40%;
+        --destructive-foreground: 30 27% 94%;
+        --border: 35 30% 60% / 0.12;
+        --input: 35 30% 60%;
+        --ring: 35 62% 72%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: "Cabinet Grotesk", ui-sans-serif, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: #E6BE8A;
+        color: #0F0D0C;
+    }
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    pointer-events: none;
+    opacity: 0.045;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes marquee-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+    50% { transform: translateY(-14px) rotate(var(--rot, 0deg)); }
+}
+
+@keyframes spin-slower {
+    to { transform: rotate(360deg); }
+}
+
+.animate-marquee-x {
+    animation: marquee-x 46s linear infinite;
+}
+
+.animate-float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-spin-slower {
+    animation: spin-slower 40s linear infinite;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+}
