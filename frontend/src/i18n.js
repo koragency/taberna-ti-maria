@@ -24,7 +24,7 @@ export const translations = {
       title: "Feito à mão, servido com graça",
       sub: "Quase tudo nasce no Algarve — do mar à horta, do cerro à mesa. O resto, o Sr. Ângelo não deixa entrar.",
       tabs: { petiscos: "Petiscos", vinhos: "Vinhos", cervejas: "Cervejas" },
-      note: "Preços com IVA incluído. Piadas à la carte, cortesia do Sr. Ângelo.",
+      note: "Come-se a tradição. Reparte-se o petisco. Brinda-se com medronho. É o conforto da Ti Maria.",
       empty: "A arca está vazia... volte já já.",
     },
     legend: {
@@ -101,7 +101,7 @@ export const translations = {
       title: "Made by hand, served with a wink",
       sub: "Almost everything is born in the Algarve — from the sea to the garden, from the hills to the table. The rest, Mr. Ângelo simply won't let in.",
       tabs: { petiscos: "Petiscos", vinhos: "Wines", cervejas: "Beers" },
-      note: "Prices include VAT. Jokes à la carte, courtesy of Mr. Ângelo.",
+      note: "Tradition is eaten. The petisco is shared. We toast with medronho. That is the comfort of Ti Maria.",
       empty: "The pantry is empty... come back in a moment.",
     },
     legend: {
