@@ -58,7 +58,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        <h1 className="font-serif text-4xl italic leading-[1.05] text-tinta sm:text-6xl lg:text-7xl" data-testid="brand-slogan">
+        <h1 className="font-sans text-4xl font-extrabold leading-[1.08] tracking-tight text-tinta sm:text-6xl lg:text-7xl" data-testid="brand-slogan">
           <MaskedLine delay={0.55}>{t.hero.slogan1}</MaskedLine>
           <MaskedLine delay={0.75} className="text-terra">
             {t.hero.slogan2}

@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       kicker: "Taberna · Lagos · Desde 1954",
       slogan1: "ÓOOOH Ti Maria,",
-      slogan2: "vem cá provar disto!",
+      slogan2: "tens cá disto?",
       sub: "Petiscos caseiros, vinhos do Algarve e cerveja a tirar lágrimas de tão fresca. Aqui come-se devagar, ri-se alto e sai-se de coração cheio.",
       ctaMenu: "Ver a ementa",
       ctaBook: "Ligar para reservar",
@@ -73,7 +73,7 @@ export const translations = {
       maps: "Ver no mapa",
     },
     footer: {
-      slogan: "ÓOOOH Ti Maria, vem cá provar disto!",
+      slogan: "ÓOOOH Ti Maria, tens cá disto?",
       rights: "Taberna Ti Maria — Lagos, Algarve",
       made: "Feito com sal, limão e boa disposição",
     },
@@ -89,7 +89,7 @@ export const translations = {
     hero: {
       kicker: "Tavern · Lagos · Since 1954",
       slogan1: "OOOH Ti Maria,",
-      slogan2: "come and taste this!",
+      slogan2: "got any of this?",
       sub: "Homemade petiscos, Algarve wines and beer so cold it brings tears to your eyes. Here we eat slowly, laugh loudly and leave with a full heart.",
       ctaMenu: "See the menu",
       ctaBook: "Call to book",
@@ -150,7 +150,7 @@ export const translations = {
       maps: "Open in maps",
     },
     footer: {
-      slogan: "OOOH Ti Maria, come and taste this!",
+      slogan: "OOOH Ti Maria, got any of this?",
       rights: "Taberna Ti Maria — Lagos, Algarve",
       made: "Made with salt, lemon and good cheer",
     },
