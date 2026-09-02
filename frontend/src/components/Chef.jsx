@@ -1,8 +1,7 @@
 import { useLang } from "@/i18n";
 import { Reveal, Kicker } from "@/components/motion";
 
-const CHEF_IMG =
-  "https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxjaGVmJTIwY29va2luZyUyMHJlc3RhdXJhbnR8ZW58MHx8fHwxNzg4MzM1NzY5fDA&ixlib=rb-4.1.0&q=85";
+const CHEF_IMG = "/assets/angelo.jpg";
 
 export default function Chef() {
   const { t } = useLang();
