@@ -6,12 +6,13 @@ import Legend from "@/components/Legend";
 import Chef from "@/components/Chef";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { AzulejoStrip } from "@/components/Sardine";
+import { AzulejoStrip, SwimmingSardine } from "@/components/Sardine";
 
 export default function Landing() {
   return (
     <main data-testid="landing-page" className="bg-creme text-tinta">
       <Nav />
+      <SwimmingSardine />
       <Hero />
       <Marquee />
       <MenuSection />

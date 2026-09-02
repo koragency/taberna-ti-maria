@@ -1,3 +1,5 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+
 export const SardineIcon = ({ className = "", eyeColor = "#FAF2DF" }) => (
   <svg viewBox="0 0 120 48" fill="none" className={className} aria-hidden="true">
     <path
@@ -51,3 +53,25 @@ export const FloatingSardines = () => (
     ))}
   </div>
 );
+
+export const SwimmingSardine = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], ["-18vw", "112vw"]);
+  const y = useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], ["34vh", "60vh", "38vh", "64vh", "40vh", "56vh"]);
+  const rotate = useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [9, -11, 9, -11, 9, -7]);
+  const color = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], ["#D96B43", "#2B5FAB", "#E4607F", "#5E9E54", "#7A5AA6"]);
+  return (
+    <motion.div
+      aria-hidden="true"
+      data-testid="swimming-sardine"
+      className="pointer-events-none fixed left-0 top-0 z-30 hidden md:block"
+      style={{ x, y }}
+    >
+      <motion.div style={{ rotate, scaleX: -1, color }}>
+        <div className="animate-tail-wag">
+          <SardineIcon className="h-10 w-24 drop-shadow-lg" />
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};

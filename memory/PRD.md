@@ -15,8 +15,7 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 - Backend: FastAPI + MongoDB (motor). Rotas `/api/menu` (GET público; POST/PUT/DELETE protegidos) e `/api/auth/*` (login/logout/me/refresh, JWT em httpOnly cookies, bcrypt, proteção brute-force 5 tentativas/15 min).
 - Seed automático no startup: admin + 18 itens de ementa (petiscos/vinhos/cervejas algarvios, PT+EN).
 
-## Restyling (2026-09-02, pedido do utilizador)
-- Tema escuro substituído por tema claro e alegre inspirado nas fotos enviadas: sardinhas de cerâmica coloridas e azulejos portugueses.
+## Restyling (2026-09-02, pedido do utilizador)- Tema escuro substituído por tema claro e alegre inspirado nas fotos enviadas: sardinhas de cerâmica coloridas e azulejos portugueses.
 - Nova paleta: creme (#FAF2DF) base, azul azulejo (#2B5FAB/#1C3A6B), terracota (#D96B43), rosa cerâmica (#E4607F), amarelo mostarda (#F0B429), menta, roxo, vinho.
 - Padrão de azulejo português em SVG (gerado em código) como fundo do herói, divisores entre secções e parede de azulejos na secção da Lenda (fundo azul profundo).
 - Sardinhas flutuantes multicoloridas no herói; faixa marquee terracota com sardinhas amarelas; secção do Chef em amarelo suave; secção de contactos em rosa com cartões translúcidos; rodapé azul profundo.
@@ -46,3 +45,6 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 - P1: destaque "Prato do dia" editável no admin.
 - P2: Instagram feed ou link; reviews de clientes; versão impressa da ementa (PDF).
 - P2: SEO/meta tags OG com o logotipo; favicon da marca.
+
+## Funcionalidades extra (2026-09-02)
+- SwimmingSardine: sardinha que nada da esquerda para a direita do ecrã conforme o scroll (framer-motion useScroll), trajetória ondulante, cauda a abanar (CSS tail-wag) e cor que muda por secção (terracota → azul → rosa → verde → roxo). Escondida em mobile.

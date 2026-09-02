@@ -74,6 +74,16 @@ body::after {
     to { transform: rotate(360deg); }
 }
 
+@keyframes tail-wag {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.animate-tail-wag {
+    animation: tail-wag 0.55s ease-in-out infinite;
+    transform-origin: 80% 50%;
+}
+
 .animate-marquee-x {
     animation: marquee-x 46s linear infinite;
 }
