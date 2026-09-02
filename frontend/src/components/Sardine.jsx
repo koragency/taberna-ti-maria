@@ -1,4 +1,4 @@
-export const SardineIcon = ({ className = "", eyeColor = "#0F0D0C" }) => (
+export const SardineIcon = ({ className = "", eyeColor = "#FAF2DF" }) => (
   <svg viewBox="0 0 120 48" fill="none" className={className} aria-hidden="true">
     <path
       d="M8 24 C 24 8, 62 4, 86 16 L 112 5 C 108 16, 108 32, 112 43 L 86 32 C 62 44, 24 40, 8 24 Z"
@@ -10,18 +10,44 @@ export const SardineIcon = ({ className = "", eyeColor = "#0F0D0C" }) => (
 );
 
 export const SardineDivider = ({ className = "" }) => (
-  <div className={`flex items-center justify-center gap-4 ${className}`} aria-hidden="true">
-    <span className="h-px w-16 bg-gold/30" />
-    <SardineIcon className="w-10 h-4 text-gold/70" />
-    <span className="h-px w-16 bg-gold/30" />
+  <div className={`flex items-center justify-center gap-4 text-terra ${className}`} aria-hidden="true">
+    <span className="h-px w-16 bg-current opacity-60" />
+    <SardineIcon className="w-10 h-4" />
+    <span className="h-px w-16 bg-current opacity-60" />
   </div>
 );
 
+const TILE_SVG = (color, opacity) =>
+  `<svg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'><g fill='none' stroke='${color}' stroke-opacity='${opacity}' stroke-width='2'><rect x='1.5' y='1.5' width='93' height='93'/><circle cx='48' cy='48' r='13'/><path d='M48 18 C 60 34, 60 62, 48 78 C 36 62, 36 34, 48 18 Z'/><path d='M18 48 C 34 36, 62 36, 78 48 C 62 60, 34 60, 18 48 Z'/><circle cx='0' cy='0' r='16'/><circle cx='96' cy='0' r='16'/><circle cx='0' cy='96' r='16'/><circle cx='96' cy='96' r='16'/></g></svg>`;
+
+export const azulejoTile = (color, opacity = 0.5, size = 96) => ({
+  backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(TILE_SVG(color, opacity))}")`,
+  backgroundSize: `${size}px ${size}px`,
+});
+
+export const AzulejoStrip = ({ color = "#2B5FAB", tile = 44, className = "" }) => (
+  <div
+    aria-hidden="true"
+    className={`h-11 w-full ${className}`}
+    style={{ ...azulejoTile(color, 0.85, tile), backgroundRepeat: "repeat-x", backgroundPosition: "center top" }}
+  />
+);
+
+const FISH = [
+  { cls: "left-[5%] top-[16%] w-20", color: "text-terra", rot: "-8deg", delay: "0s" },
+  { cls: "right-[7%] top-[26%] w-28 -scale-x-100", color: "text-azul", rot: "6deg", delay: "1.2s" },
+  { cls: "left-[12%] bottom-[16%] w-14", color: "text-amarelo", rot: "4deg", delay: "0.6s" },
+  { cls: "right-[14%] bottom-[22%] w-16 -scale-x-100", color: "text-rosa", rot: "-5deg", delay: "1.8s" },
+  { cls: "left-[42%] top-[8%] w-12", color: "text-menta", rot: "10deg", delay: "2.4s" },
+  { cls: "right-[38%] bottom-[8%] w-12 -scale-x-100", color: "text-roxo", rot: "-10deg", delay: "0.9s" },
+];
+
 export const FloatingSardines = () => (
   <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-    <SardineIcon className="animate-float-slow absolute left-[6%] top-[18%] w-20 text-sardine/25" />
-    <SardineIcon className="animate-float-slow absolute right-[8%] top-[30%] w-28 -scale-x-100 text-gold/20" eyeColor="#0F0D0C" />
-    <SardineIcon className="animate-float-slow absolute left-[14%] bottom-[14%] w-14 text-terra/25" />
-    <SardineIcon className="animate-float-slow absolute right-[16%] bottom-[24%] w-16 -scale-x-100 text-sardine/20" />
+    {FISH.map((f, i) => (
+      <span key={i} className={`animate-float-slow absolute ${f.cls}`} style={{ "--rot": f.rot, animationDelay: f.delay }}>
+        <SardineIcon className={`h-full w-full ${f.color}`} />
+      </span>
+    ))}
   </div>
 );

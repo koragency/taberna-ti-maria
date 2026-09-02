@@ -19,7 +19,7 @@ export default function Nav() {
   return (
     <header
       data-testid="nav-header"
-      className="fixed inset-x-0 top-0 z-40 border-b border-gold/10 bg-ink/75 backdrop-blur-xl"
+      className="fixed inset-x-0 top-0 z-40 border-b border-azul/10 bg-creme/85 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
         <button
@@ -27,10 +27,10 @@ export default function Nav() {
           className="flex items-center gap-3"
           data-testid="nav-logo-button"
         >
-          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-cream shadow-lg shadow-black/40">
+          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white shadow-md shadow-terra/20 ring-1 ring-terra/20">
             <img src="/assets/logo.png" alt="Taberna Ti Maria" className="h-full w-full object-cover" />
           </span>
-          <span className="hidden font-serif text-lg italic text-cream sm:block">Ti Maria</span>
+          <span className="hidden font-serif text-lg italic text-tinta sm:block">Ti Maria</span>
         </button>
 
         <nav className="hidden items-center gap-7 md:flex">
@@ -38,7 +38,7 @@ export default function Nav() {
             <button
               key={l.id}
               onClick={() => scrollTo(l.id)}
-              className="text-sm text-sand transition-colors duration-300 hover:text-gold"
+              className="text-sm font-medium text-tinta/70 transition-colors duration-300 hover:text-terra"
               data-testid={`nav-link-${l.id}`}
             >
               {l.label}
@@ -47,14 +47,14 @@ export default function Nav() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="flex items-center rounded-full border border-gold/25 p-0.5" data-testid="language-toggle">
+          <div className="flex items-center rounded-full border border-azul/25 bg-white/60 p-0.5" data-testid="language-toggle">
             {["pt", "en"].map((l) => (
               <button
                 key={l}
                 data-testid={`language-toggle-${l}`}
                 onClick={() => setLang(l)}
                 className={`rounded-full px-3 py-1 font-mono text-xs uppercase tracking-widest transition-colors duration-300 ${
-                  lang === l ? "bg-gold text-ink" : "text-sand hover:text-cream"
+                  lang === l ? "bg-azul text-white" : "text-tinta/60 hover:text-tinta"
                 }`}
               >
                 {l}
@@ -65,7 +65,7 @@ export default function Nav() {
             to="/admin"
             data-testid="nav-admin-link"
             aria-label={t.nav.admin}
-            className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/20 text-sand transition-colors duration-300 hover:border-gold/50 hover:text-gold"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-azul/25 text-tinta/60 transition-colors duration-300 hover:border-terra hover:text-terra"
           >
             <KeyRound className="h-3.5 w-3.5" />
           </Link>

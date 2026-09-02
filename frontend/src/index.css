@@ -7,25 +7,25 @@
 
 @layer base {
     :root {
-        --background: 20 12% 5%;
-        --foreground: 30 27% 94%;
-        --card: 20 11% 9%;
-        --card-foreground: 30 27% 94%;
-        --popover: 20 11% 9%;
-        --popover-foreground: 30 27% 94%;
-        --primary: 35 62% 72%;
-        --primary-foreground: 20 12% 5%;
-        --secondary: 25 13% 15%;
-        --secondary-foreground: 30 27% 94%;
-        --muted: 25 13% 15%;
-        --muted-foreground: 36 9% 61%;
-        --accent: 25 13% 15%;
-        --accent-foreground: 30 27% 94%;
-        --destructive: 0 62% 40%;
-        --destructive-foreground: 30 27% 94%;
-        --border: 35 30% 60% / 0.12;
-        --input: 35 30% 60%;
-        --ring: 35 62% 72%;
+        --background: 44 72% 93%;
+        --foreground: 28 26% 17%;
+        --card: 0 0% 100%;
+        --card-foreground: 28 26% 17%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 28 26% 17%;
+        --primary: 14 65% 55%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 44 52% 88%;
+        --secondary-foreground: 28 26% 17%;
+        --muted: 44 40% 88%;
+        --muted-foreground: 33 14% 45%;
+        --accent: 44 52% 88%;
+        --accent-foreground: 28 26% 17%;
+        --destructive: 355 56% 42%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 28 26% 17% / 0.12;
+        --input: 28 26% 17%;
+        --ring: 14 65% 55%;
         --radius: 0.5rem;
     }
 }
@@ -45,8 +45,8 @@
         overflow-x: hidden;
     }
     ::selection {
-        background: #E6BE8A;
-        color: #0F0D0C;
+        background: #F0B429;
+        color: #3A2E22;
     }
 }
 
@@ -56,7 +56,7 @@ body::after {
     inset: 0;
     z-index: 90;
     pointer-events: none;
-    opacity: 0.045;
+    opacity: 0.05;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 

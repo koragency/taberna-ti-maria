@@ -7,6 +7,12 @@ import { SardineDivider, SardineIcon } from "@/components/Sardine";
 
 const TABS = ["petiscos", "vinhos", "cervejas"];
 
+const TAB_ACTIVE = {
+  petiscos: "bg-terra text-white shadow-md shadow-terra/30",
+  vinhos: "bg-vinho text-white shadow-md shadow-vinho/30",
+  cervejas: "bg-amarelo text-tinta shadow-md shadow-amarelo/40",
+};
+
 const SARDINES_IMG =
   "https://images.unsplash.com/photo-1534121222821-9e2e2936f059?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHxncmlsbGVkJTIwc2FyZGluZXN8ZW58MHx8fHwxNzg4MzM1NzY5fDA&ixlib=rb-4.1.0&q=85";
 
@@ -27,26 +33,26 @@ export default function MenuSection() {
   const filtered = items.filter((i) => i.category === tab && i.available !== false);
 
   return (
-    <section id="ementa" data-testid="menu-section" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 sm:py-36">
+    <section id="ementa" data-testid="menu-section" className="relative mx-auto max-w-6xl bg-papel px-5 py-28 sm:px-8 sm:py-36">
       <div className="grid gap-14 lg:grid-cols-[1fr_360px]">
         <div>
           <Reveal>
             <Kicker>{t.menu.kicker}</Kicker>
-            <h2 className="mt-4 font-serif text-3xl tracking-tight text-cream sm:text-4xl lg:text-5xl">
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-tinta sm:text-4xl lg:text-5xl">
               {t.menu.title}
             </h2>
-            <p className="mt-5 max-w-xl text-base text-sand">{t.menu.sub}</p>
+            <p className="mt-5 max-w-xl text-base text-tinta/70">{t.menu.sub}</p>
           </Reveal>
 
           <Reveal delay={0.1} className="mt-10">
-            <div className="inline-flex flex-wrap gap-2 rounded-full border border-gold/15 bg-coal/70 p-1.5">
+            <div className="inline-flex flex-wrap gap-2 rounded-full border border-azul/15 bg-white p-1.5 shadow-sm">
               {TABS.map((key) => (
                 <button
                   key={key}
                   data-testid={`menu-tab-${key}`}
                   onClick={() => setTab(key)}
                   className={`rounded-full px-5 py-2 text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
-                    tab === key ? "bg-gold text-ink" : "text-sand hover:text-cream"
+                    tab === key ? TAB_ACTIVE[key] : "text-tinta/60 hover:text-tinta"
                   }`}
                 >
                   {t.menu.tabs[key]}
@@ -57,8 +63,8 @@ export default function MenuSection() {
 
           <div className="mt-10 min-h-[300px]">
             {loading ? (
-              <div className="flex items-center gap-3 text-sand" data-testid="menu-loading">
-                <SardineIcon className="w-10 animate-pulse text-gold/50" />
+              <div className="flex items-center gap-3 text-tinta/60" data-testid="menu-loading">
+                <SardineIcon className="w-10 animate-pulse text-terra/60" />
                 <span className="font-mono text-xs uppercase tracking-widest">...</span>
               </div>
             ) : (
@@ -72,7 +78,7 @@ export default function MenuSection() {
                   className="space-y-7"
                 >
                   {filtered.length === 0 && (
-                    <li className="font-serif text-lg italic text-sand" data-testid="menu-empty">
+                    <li className="font-serif text-lg italic text-tinta/60" data-testid="menu-empty">
                       {t.menu.empty}
                     </li>
                   )}
@@ -86,15 +92,15 @@ export default function MenuSection() {
                       className="group"
                     >
                       <div className="flex items-baseline gap-3">
-                        <h3 className="font-serif text-xl text-cream transition-colors duration-300 group-hover:text-gold sm:text-2xl">
+                        <h3 className="font-serif text-xl text-tinta transition-colors duration-300 group-hover:text-terra sm:text-2xl">
                           {lang === "pt" ? item.name_pt : item.name_en}
                         </h3>
-                        <span className="flex-1 -translate-y-1 border-b border-dotted border-gold/25" />
-                        <span className="whitespace-nowrap font-mono text-sm font-medium text-gold sm:text-base">
+                        <span className="flex-1 -translate-y-1 border-b border-dotted border-tinta/25" />
+                        <span className="whitespace-nowrap font-mono text-sm font-semibold text-azul sm:text-base">
                           {item.price}
                         </span>
                       </div>
-                      <p className="mt-1.5 max-w-xl text-sm text-sand">
+                      <p className="mt-1.5 max-w-xl text-sm text-tinta/60">
                         {lang === "pt" ? item.description_pt : item.description_en}
                       </p>
                     </motion.li>
@@ -104,17 +110,17 @@ export default function MenuSection() {
             )}
           </div>
 
-          <p className="mt-12 font-mono text-xs italic tracking-wide text-sand/70">{t.menu.note}</p>
+          <p className="mt-12 font-mono text-xs italic tracking-wide text-tinta/50">{t.menu.note}</p>
         </div>
 
         <Reveal delay={0.2} className="hidden lg:block">
           <div className="sticky top-28">
-            <div className="relative overflow-hidden rounded-2xl ring-1 ring-gold/20">
+            <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-azul/20 ring-2 ring-terra/30">
               <img src={SARDINES_IMG} alt="Sardinhas assadas" className="h-[480px] w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-ink/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-azuldeep/85 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="font-serif text-lg italic text-cream">“Na brasa, com sal grosso e graça.”</p>
-                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.3em] text-gold/80">— Sr. Ângelo</p>
+                <p className="font-serif text-lg italic text-white">“Na brasa, com sal grosso e graça.”</p>
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.3em] text-amarelo">— Sr. Ângelo</p>
               </div>
             </div>
             <SardineDivider className="mt-8" />

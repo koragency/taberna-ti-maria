@@ -6,16 +6,19 @@ import Legend from "@/components/Legend";
 import Chef from "@/components/Chef";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { AzulejoStrip } from "@/components/Sardine";
 
 export default function Landing() {
   return (
-    <main data-testid="landing-page" className="bg-ink text-cream">
+    <main data-testid="landing-page" className="bg-creme text-tinta">
       <Nav />
       <Hero />
       <Marquee />
       <MenuSection />
+      <AzulejoStrip color="#D96B43" />
       <Legend />
       <Chef />
+      <AzulejoStrip color="#2B5FAB" />
       <Contact />
       <Footer />
     </main>
