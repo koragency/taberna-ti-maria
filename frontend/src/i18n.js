@@ -58,7 +58,7 @@ export const translations = {
       ],
       text1: "Há quarenta anos que o Sr. Ângelo cozinha. Vinte deles a mandar em cozinhas que outras gentes assinavam. Agora cozinha para si — e para si, que está a ler isto.",
       text2: "A cozinha é pequena, a ambição não. Produtos algarvios, receitas de família e a teimosia de quem quer que cada prato fique na cabeça de quem o prova. Spoiler: fica.",
-      quote: "“Não quero que seja uma simples taberna. Eu quero imputar quem nos vista.”",
+      quote: "“Não quero que seja uma simples taberna. Eu quero impactar quem nos visita.”",
     },
     contact: {
       kicker: "Reservas & Encontro",
