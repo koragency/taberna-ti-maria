@@ -90,7 +90,7 @@ export default function Hero() {
           </button>
           <a
             data-testid="hero-call-button"
-            href="tel:+351282123456"
+            href="tel:+351912184583"
             className="group flex items-center gap-2.5 rounded-full border-2 border-azul/40 bg-white/50 px-7 py-3.5 text-sm font-semibold uppercase tracking-widest text-azul transition-all duration-300 hover:border-azul hover:bg-azul hover:text-white"
           >
             <Phone className="h-4 w-4 transition-transform duration-300 group-hover:-rotate-12" />

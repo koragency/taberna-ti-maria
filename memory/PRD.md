@@ -40,7 +40,7 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 - Ver /app/memory/test_credentials.md (admin: angelo@timaria.pt / TiMaria1954!)
 
 ## Backlog
-- P0: substituir telefone/morada pelos reais. (foto real do Sr. Ângelo já aplicada 2026-09-02)
+- P0: substituir telefone/morada pelos reais. (foto real do Sr. Ângelo já aplicada 2026-09-02; telefone real +351 912 184 583 e morada Tv. Dom Vasco da Gama 11, Lagos aplicados 2026-09-02)
 - P1: secção de galeria do espaço (sardinhas na decoração física).
 - P1: destaque "Prato do dia" editável no admin.
 - P2: Instagram feed ou link; reviews de clientes; versão impressa da ementa (PDF).

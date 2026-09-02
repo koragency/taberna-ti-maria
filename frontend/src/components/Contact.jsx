@@ -23,7 +23,7 @@ export default function Contact() {
         <Reveal delay={0.12}>
           <a
             data-testid="phone-reservation-button"
-            href="tel:+351282123456"
+            href="tel:+351912184583"
             aria-label={t.contact.phoneLabel}
             className="group mt-10 inline-flex items-center gap-4 rounded-full bg-white px-8 py-5 shadow-xl shadow-tinta/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-tinta/30"
           >
@@ -32,7 +32,7 @@ export default function Contact() {
             </span>
             <span className="text-left">
               <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-terra">{t.contact.phoneLabel}</span>
-              <span className="block font-serif text-2xl text-tinta sm:text-3xl">+351 282 123 456</span>
+              <span className="block font-serif text-2xl text-tinta sm:text-3xl">+351 912 184 583</span>
             </span>
           </a>
         </Reveal>
@@ -47,7 +47,7 @@ export default function Contact() {
                 <p className="mt-2 text-base font-medium text-white">{t.contact.address}</p>
                 <a
                   data-testid="maps-link"
-                  href="https://maps.google.com/?q=Lagos,Algarve,Portugal"
+                  href="https://maps.google.com/?q=Tv.+Dom+Vasco+da+Gama+11,+Lagos,+Portugal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-block text-sm font-semibold text-white underline underline-offset-4 transition-colors hover:text-amarelo"
