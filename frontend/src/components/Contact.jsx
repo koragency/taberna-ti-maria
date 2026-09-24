@@ -4,7 +4,7 @@ import { Reveal, Kicker } from "@/components/motion";
 import { SardineDivider } from "@/components/Sardine";
 
 export const WHATSAPP_URL = (message) =>
-  `https://wa.me/351912184583?text=${encodeURIComponent(message)}`;
+  `https://wa.me/351927915314?text=${encodeURIComponent(message)}`;
 
 export default function Contact() {
   const { t } = useLang();
@@ -37,7 +37,7 @@ export default function Contact() {
             </span>
             <span className="text-left">
               <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-terra">{t.contact.phoneLabel}</span>
-              <span className="block font-serif text-2xl text-tinta sm:text-3xl">+351 912 184 583</span>
+              <span className="block font-serif text-2xl text-tinta sm:text-3xl">+351 927 915 314</span>
             </span>
           </a>
         </Reveal>
@@ -52,7 +52,7 @@ export default function Contact() {
                 <p className="mt-2 text-base font-medium text-white">{t.contact.address}</p>
                 <a
                   data-testid="maps-link"
-                  href="https://maps.google.com/?q=Tv.+Dom+Vasco+da+Gama+11,+Lagos,+Portugal"
+                  href="https://maps.google.com/?q=Tv.+Dom+Vasco+da+Gama+9,+Lagos,+Portugal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-block text-sm font-semibold text-white underline underline-offset-4 transition-colors hover:text-amarelo"
