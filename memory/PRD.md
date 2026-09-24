@@ -50,5 +50,6 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 - Secção do Sr. Ângelo (história, stats, citação, foto) REMOVIDA a pedido do utilizador. Em seu lugar: secção "A Nossa Cozinha" com o vídeo enviado (Angelo 1.mov).
 - Vídeo publicado SEM gradação de cor (o utilizador pediu para desfazer a melhoria). Apenas conversão: 1080p→720p, /assets/cozinha.webm (VP9, 5.9MB) + /assets/cozinha.mp4 (H.264, 9.4MB), poster /assets/cozinha-poster.jpg. Autoplay muted loop. Original guardado em /root/angelo_raw.mov.
 - Nav: "O Cozinheiro" → "A Cozinha" (PT/EN).
+- Ementa substituída pelo menu real da taberna (2026-09-24): 8 categorias (pequeno-almoco, menu, almoco, petiscos, fritos, especialidades, frios, sandes), 27 itens, SEM preços. Frontend esconde linha de preço quando vazio. Tabs coloridas por categoria. Typos do original normalizados (à Guilho, orégãos, grão).
 
 ## Funcionalidades extra (2026-09-02)- SwimmingSardine: sardinha que nada da esquerda para a direita do ecrã conforme o scroll (framer-motion useScroll), trajetória ondulante, cauda a abanar (CSS tail-wag) e cor que muda por secção (terracota → azul → rosa → verde → roxo). Escondida em mobile.

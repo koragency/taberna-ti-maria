@@ -4,7 +4,7 @@ import { ArrowLeft, Loader2, LogOut, Pencil, Plus, Trash2, X } from "lucide-reac
 import api, { formatApiError } from "@/api";
 import { SardineIcon } from "@/components/Sardine";
 
-const CATEGORIES = ["petiscos", "vinhos", "cervejas"];
+const CATEGORIES = ["pequeno-almoco", "menu", "almoco", "petiscos", "fritos", "especialidades", "frios", "sandes"];
 const emptyForm = {
   category: "petiscos",
   name_pt: "",

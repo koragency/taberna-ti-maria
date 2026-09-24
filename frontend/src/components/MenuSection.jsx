@@ -5,12 +5,17 @@ import api from "@/api";
 import { Reveal, Kicker } from "@/components/motion";
 import { SardineDivider, SardineIcon } from "@/components/Sardine";
 
-const TABS = ["petiscos", "vinhos", "cervejas"];
+const TABS = ["pequeno-almoco", "menu", "almoco", "petiscos", "fritos", "especialidades", "frios", "sandes"];
 
 const TAB_ACTIVE = {
-  petiscos: "bg-terra text-white shadow-md shadow-terra/30",
-  vinhos: "bg-vinho text-white shadow-md shadow-vinho/30",
-  cervejas: "bg-amarelo text-tinta shadow-md shadow-amarelo/40",
+  "pequeno-almoco": "bg-amarelo text-tinta shadow-md shadow-amarelo/40",
+  menu: "bg-azul text-white shadow-md shadow-azul/30",
+  almoco: "bg-terra text-white shadow-md shadow-terra/30",
+  petiscos: "bg-rosa text-white shadow-md shadow-rosa/30",
+  fritos: "bg-vinho text-white shadow-md shadow-vinho/30",
+  especialidades: "bg-roxo text-white shadow-md shadow-roxo/30",
+  frios: "bg-menta text-tinta shadow-md shadow-menta/40",
+  sandes: "bg-verde text-white shadow-md shadow-verde/30",
 };
 
 const SARDINES_IMG =
@@ -19,7 +24,7 @@ const SARDINES_IMG =
 export default function MenuSection() {
   const { lang, t } = useLang();
   const [items, setItems] = useState([]);
-  const [tab, setTab] = useState("petiscos");
+  const [tab, setTab] = useState("pequeno-almoco");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -95,10 +100,14 @@ export default function MenuSection() {
                         <h3 className="font-serif text-xl text-tinta transition-colors duration-300 group-hover:text-terra sm:text-2xl">
                           {lang === "pt" ? item.name_pt : item.name_en}
                         </h3>
-                        <span className="flex-1 -translate-y-1 border-b border-dotted border-tinta/25" />
-                        <span className="whitespace-nowrap font-mono text-sm font-semibold text-azul sm:text-base">
-                          {item.price}
-                        </span>
+                        {item.price ? (
+                          <>
+                            <span className="flex-1 -translate-y-1 border-b border-dotted border-tinta/25" />
+                            <span className="whitespace-nowrap font-mono text-sm font-semibold text-azul sm:text-base">
+                              {item.price}
+                            </span>
+                          </>
+                        ) : null}
                       </div>
                       <p className="mt-1.5 max-w-xl text-sm text-tinta/60">
                         {lang === "pt" ? item.description_pt : item.description_en}
