@@ -48,7 +48,7 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 
 ## Alterações 2026-09-24
 - Secção do Sr. Ângelo (história, stats, citação, foto) REMOVIDA a pedido do utilizador. Em seu lugar: secção "A Nossa Cozinha" com o vídeo enviado (Angelo 1.mov).
-- Vídeo melhorado com ffmpeg: gradação quente (saturação +28%, tons dourados, leve vinheta, sharpen), 1080p→720p. Dois formatos: /assets/cozinha.webm (VP9, 6.7MB) + /assets/cozinha.mp4 (H.264, 10.9MB) com poster /assets/cozinha-poster.jpg. Autoplay muted loop. Original guardado em /root/angelo_raw.mov.
+- Vídeo publicado SEM gradação de cor (o utilizador pediu para desfazer a melhoria). Apenas conversão: 1080p→720p, /assets/cozinha.webm (VP9, 5.9MB) + /assets/cozinha.mp4 (H.264, 9.4MB), poster /assets/cozinha-poster.jpg. Autoplay muted loop. Original guardado em /root/angelo_raw.mov.
 - Nav: "O Cozinheiro" → "A Cozinha" (PT/EN).
 
 ## Funcionalidades extra (2026-09-02)- SwimmingSardine: sardinha que nada da esquerda para a direita do ecrã conforme o scroll (framer-motion useScroll), trajetória ondulante, cauda a abanar (CSS tail-wag) e cor que muda por secção (terracota → azul → rosa → verde → roxo). Escondida em mobile.
