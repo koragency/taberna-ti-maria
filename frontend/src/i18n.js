@@ -65,8 +65,8 @@ export const translations = {
       addressLabel: "Onde ficamos",
       address: "Tv. Dom Vasco da Gama 9, Lagos, Portugal",
       hoursLabel: "Quando abrimos",
-      hours: "Ter–Dom · 12h00–23h00",
-      hoursNote: "À segunda a taberna dorme. Até a Maria precisa de descanso.",
+      hours: "Ter–Sáb · 09h00–21h00",
+      hoursNote: "Domingo · 09h00–17h00 · Segunda: fechado — a taberna dorme.",
       maps: "Ver no mapa",
     },
     footer: {
@@ -139,8 +139,8 @@ export const translations = {
       addressLabel: "Where we are",
       address: "Tv. Dom Vasco da Gama 9, Lagos, Portugal",
       hoursLabel: "When we open",
-      hours: "Tue–Sun · 12:00–23:00",
-      hoursNote: "On Mondays the tavern sleeps. Even Maria needs rest.",
+      hours: "Tue–Sat · 9:00–21:00",
+      hoursNote: "Sunday · 9:00–17:00 · Monday: closed — the tavern sleeps.",
       maps: "Open in maps",
     },
     footer: {
