@@ -25,6 +25,8 @@ export const translations = {
       sub: "Quase tudo nasce no Algarve — do mar à horta, do cerro à mesa. O resto, o Sr. Ângelo não deixa entrar.",
       tabs: { "pequeno-almoco": "Pequeno Almoço", menu: "Menu", almoco: "Almoço", petiscos: "Petiscos", fritos: "Fritos", especialidades: "Especialidades", frios: "Frios", sandes: "Sandes" },
       note: "Come-se a tradição. Reparte-se o petisco. Brinda-se com medronho. É o conforto da Ti Maria.",
+      photoQuote: "Fresco da ria, direto para a mesa.",
+      photoBy: "— Ti Maria",
       empty: "A arca está vazia... volte já já.",
     },
     legend: {
@@ -97,6 +99,8 @@ export const translations = {
       sub: "Almost everything is born in the Algarve — from the sea to the garden, from the hills to the table. The rest, Mr. Ângelo simply won't let in.",
       tabs: { "pequeno-almoco": "Breakfast", menu: "Menu", almoco: "Lunch", petiscos: "Snacks", fritos: "Fried", especialidades: "Specialities", frios: "Cold Dishes", sandes: "Sandwiches" },
       note: "Tradition is eaten. The petisco is shared. We toast with medronho. That is the comfort of Ti Maria.",
+      photoQuote: "Fresh from the ria, straight to the table.",
+      photoBy: "— Ti Maria",
       empty: "The pantry is empty... come back in a moment.",
     },
     legend: {

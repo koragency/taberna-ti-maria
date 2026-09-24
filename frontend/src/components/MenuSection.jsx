@@ -18,8 +18,7 @@ const TAB_ACTIVE = {
   sandes: "bg-verde text-white shadow-md shadow-verde/30",
 };
 
-const SARDINES_IMG =
-  "https://images.unsplash.com/photo-1534121222821-9e2e2936f059?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHxncmlsbGVkJTIwc2FyZGluZXN8ZW58MHx8fHwxNzg4MzM1NzY5fDA&ixlib=rb-4.1.0&q=85";
+const SARDINES_IMG = "/assets/salada-polvo.webp";
 
 export default function MenuSection() {
   const { lang, t } = useLang();
@@ -125,11 +124,11 @@ export default function MenuSection() {
         <Reveal delay={0.2} className="hidden lg:block">
           <div className="sticky top-28">
             <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-azul/20 ring-2 ring-terra/30">
-              <img src={SARDINES_IMG} alt="Sardinhas assadas" className="h-[480px] w-full object-cover" />
+              <img src={SARDINES_IMG} alt="Salada de polvo da casa" className="h-[480px] w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-azuldeep/85 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5">
-                <p className="font-serif text-lg italic text-white">“Na brasa, com sal grosso e graça.”</p>
-                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.3em] text-amarelo">— Sr. Ângelo</p>
+                <p className="font-serif text-lg italic text-white">{t.menu.photoQuote}</p>
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.3em] text-amarelo">{t.menu.photoBy}</p>
               </div>
             </div>
             <SardineDivider className="mt-8" />
