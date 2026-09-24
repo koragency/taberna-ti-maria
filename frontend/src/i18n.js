@@ -5,7 +5,7 @@ export const translations = {
     nav: {
       menu: "A Ementa",
       legend: "A Lenda",
-      chef: "O Cozinheiro",
+      chef: "A Cozinha",
       contact: "Reservas",
       admin: "Entrar",
     },
@@ -48,17 +48,11 @@ export const translations = {
         },
       ],
     },
-    chef: {
-      kicker: "O Homem do Fogão",
-      title: "Sr. Ângelo",
-      stats: [
-        { value: "40", label: "anos aos tachos" },
-        { value: "20", label: "anos como chefe" },
-        { value: "1", label: "segredo que não revela" },
-      ],
-      text1: "Há quarenta anos que o Sr. Ângelo cozinha. Vinte deles a mandar em cozinhas que outras gentes assinavam. Agora cozinha para si — e para si, que está a ler isto.",
-      text2: "A cozinha é pequena, a ambição não. Produtos algarvios, receitas de família e a teimosia de quem quer que cada prato fique na cabeça de quem o prova. Spoiler: fica.",
-      quote: "“Não quero que seja uma simples taberna. Eu quero impactar quem nos visita.”",
+    kitchen: {
+      kicker: "A Nossa Cozinha",
+      title: "Do fogão diretamente para a mesa",
+      sub: "Tachos ao lume, brasa acesa e o Algarve inteiro no prato. Espreite o que se passa do outro lado do balcão.",
+      caption: "Feito à mão, todos os dias.",
     },
     contact: {
       kicker: "Reservas & Encontro",
@@ -83,7 +77,7 @@ export const translations = {
     nav: {
       menu: "The Menu",
       legend: "The Legend",
-      chef: "The Chef",
+      chef: "The Kitchen",
       contact: "Reservations",
       admin: "Sign in",
     },
@@ -126,17 +120,11 @@ export const translations = {
         },
       ],
     },
-    chef: {
-      kicker: "The Man at the Stove",
-      title: "Mr. Ângelo",
-      stats: [
-        { value: "40", label: "years at the stove" },
-        { value: "20", label: "years as head chef" },
-        { value: "1", label: "secret he won't reveal" },
-      ],
-      text1: "Mr. Ângelo has been cooking for forty years. Twenty of them running kitchens that other people signed. Now he cooks for himself — and for you, reading this.",
-      text2: "The kitchen is small, the ambition is not. Algarve produce, family recipes and the stubbornness of a man who wants every dish to stay in the memory of whoever tastes it. Spoiler: it does.",
-      quote: "“I don't want this to be just a tavern. I want to impact those who visit us.”",
+    kitchen: {
+      kicker: "Our Kitchen",
+      title: "From the stove straight to the table",
+      sub: "Pots on the fire, coals glowing and the whole Algarve on the plate. Peek at what happens behind the counter.",
+      caption: "Handmade, every single day.",
     },
     contact: {
       kicker: "Reservations & Finding Us",
