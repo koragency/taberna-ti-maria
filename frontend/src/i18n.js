@@ -8,6 +8,8 @@ export const translations = {
       chef: "A Cozinha",
       contact: "Reservas",
       admin: "Entrar",
+      openNow: "Aberto agora",
+      closed: "Fechado",
     },
     hero: {
       kicker: "Taberna · Lagos · Desde 1954",
@@ -82,6 +84,8 @@ export const translations = {
       chef: "The Kitchen",
       contact: "Reservations",
       admin: "Sign in",
+      openNow: "Open now",
+      closed: "Closed",
     },
     hero: {
       kicker: "Tavern · Lagos · Since 1954",

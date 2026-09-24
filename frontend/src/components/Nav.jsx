@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useLang } from "@/i18n";
 import { KeyRound } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,8 +8,25 @@ const scrollTo = (id) => {
   if (el) el.scrollIntoView({ behavior: "smooth" });
 };
 
+const isOpenNow = () => {
+  const lisbon = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Lisbon" }));
+  const day = lisbon.getDay();
+  if (day === 1) return false;
+  const mins = lisbon.getHours() * 60 + lisbon.getMinutes();
+  const close = day === 0 ? 17 * 60 : 21 * 60;
+  return mins >= 9 * 60 && mins < close;
+};
+
 export default function Nav() {
   const { lang, setLang, t } = useLang();
+  const [open, setOpen] = useState(null);
+
+  useEffect(() => {
+    setOpen(isOpenNow());
+    const timer = setInterval(() => setOpen(isOpenNow()), 60000);
+    return () => clearInterval(timer);
+  }, []);
+
   const links = [
     { id: "ementa", label: t.nav.menu },
     { id: "lenda", label: t.nav.legend },
@@ -32,6 +50,21 @@ export default function Nav() {
           </span>
           <span className="hidden font-serif text-lg italic text-tinta sm:block">Ti Maria</span>
         </button>
+
+        {open !== null && (
+          <span
+            data-testid="open-now-badge"
+            className={`ml-2 hidden items-center gap-2 rounded-full border px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] sm:inline-flex ${
+              open ? "border-verde/40 bg-verde/10 text-verde" : "border-vinho/30 bg-vinho/10 text-vinho"
+            }`}
+          >
+            <span className="relative flex h-2 w-2">
+              {open && <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-verde opacity-60" />}
+              <span className={`relative inline-flex h-2 w-2 rounded-full ${open ? "bg-verde" : "bg-vinho"}`} />
+            </span>
+            {open ? t.nav.openNow : t.nav.closed}
+          </span>
+        )}
 
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
