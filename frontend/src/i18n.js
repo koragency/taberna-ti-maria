@@ -58,6 +58,12 @@ export const translations = {
         },
       ],
     },
+    gallery: {
+      kicker: "Da Nossa Mesa",
+      title: "O que sai da cozinha",
+      sub: "Fotografias verdadeiras, pratos verdadeiros. Sem filtros nem paneleirices — só fome.",
+      captions: ["Pimentos de Padrón Recheados", "Pastéis de Bacalhau", "Tosta da Casa", "Croquetes à Antiga", "Salada de Polvo"],
+    },
     kitchen: {
       kicker: "A Nossa Cozinha",
       title: "Do fogão diretamente para a mesa",
@@ -139,6 +145,12 @@ export const translations = {
           text: "From her we inherited the art of hosting: a small table, a full glass and a long conversation. Maria is gone, but in every grilled sardine that leaves our coals, a little bit of her remains.",
         },
       ],
+    },
+    gallery: {
+      kicker: "From Our Table",
+      title: "What comes out of the kitchen",
+      sub: "Real photos, real dishes. No filters, no fuss — just appetite.",
+      captions: ["Stuffed Padrón Peppers", "Codfish Cakes", "House Toast", "Old-Style Croquettes", "Octopus Salad"],
     },
     kitchen: {
       kicker: "Our Kitchen",

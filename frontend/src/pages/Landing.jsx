@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import MenuSection from "@/components/MenuSection";
+import Gallery from "@/components/Gallery";
 import Legend from "@/components/Legend";
 import Chef from "@/components/Chef";
 import Contact from "@/components/Contact";
@@ -16,6 +17,7 @@ export default function Landing() {
       <Hero />
       <Marquee />
       <MenuSection />
+      <Gallery />
       <AzulejoStrip color="#D96B43" />
       <Legend />
       <Chef />
