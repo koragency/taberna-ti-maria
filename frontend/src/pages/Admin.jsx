@@ -4,9 +4,9 @@ import { ArrowLeft, Loader2, LogOut, Pencil, Plus, Trash2, X } from "lucide-reac
 import api, { formatApiError } from "@/api";
 import { SardineIcon } from "@/components/Sardine";
 
-const CATEGORIES = ["pequeno-almoco", "menu", "almoco", "petiscos", "fritos", "especialidades", "frios", "sandes"];
+const CATEGORIES = ["cafes", "pequeno-almoco", "pratos", "sobremesas", "gelados", "bebidas", "vinhos", "doses"];
 const emptyForm = {
-  category: "petiscos",
+  category: "cafes",
   name_pt: "",
   name_en: "",
   description_pt: "",
@@ -14,6 +14,7 @@ const emptyForm = {
   price: "",
   order: 0,
   available: true,
+  highlight: false,
 };
 
 function LoginForm({ onSuccess }) {
@@ -160,6 +161,16 @@ function ItemForm({ initial, onClose, onSaved }) {
             className="h-4 w-4 accent-terra"
           />
           Disponível na ementa
+        </label>
+        <label className="flex items-center gap-2.5 text-sm text-tinta/70">
+          <input
+            type="checkbox"
+            checked={form.highlight || false}
+            onChange={(e) => set("highlight", e.target.checked)}
+            data-testid="admin-item-highlight"
+            className="h-4 w-4 accent-terra"
+          />
+          Destaque (sardinha na ementa)
         </label>
         {error && <p className="text-sm text-vinho" data-testid="admin-form-error">{error}</p>}
         <button
