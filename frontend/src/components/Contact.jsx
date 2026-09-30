@@ -52,7 +52,7 @@ export default function Contact() {
                 <p className="mt-2 text-base font-medium text-white">{t.contact.address}</p>
                 <a
                   data-testid="maps-link"
-                  href="https://maps.google.com/?q=Tv.+Dom+Vasco+da+Gama+9,+Lagos,+Portugal"
+                  href="https://maps.google.com/?q=Tv.+Dom+Vasco+da+Gama+11,+Lagos,+Portugal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-block text-sm font-semibold text-white underline underline-offset-4 transition-colors hover:text-amarelo"
