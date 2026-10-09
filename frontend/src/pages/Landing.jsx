@@ -1,6 +1,5 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
 import MenuSection from "@/components/MenuSection";
 import Gallery from "@/components/Gallery";
 import Legend from "@/components/Legend";
@@ -15,7 +14,6 @@ export default function Landing() {
       <Nav />
       <SwimmingSardine />
       <Hero />
-      <Marquee />
       <MenuSection />
       <Gallery />
       <AzulejoStrip color="#D96B43" />
