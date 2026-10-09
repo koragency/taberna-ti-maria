@@ -83,6 +83,24 @@ Total: **0€/mês**. Única limitação: o Render free "adormece" após 15 min 
 
 ---
 
+## Passo 5 — Manter o backend acordado (UptimeRobot, grátis)
+
+O plano free do Render adormece após ~15 minutos sem visitas. Este ping gratuito evita isso:
+
+1. Crie conta grátis em https://uptimerobot.com (sem cartão).
+2. **Add New Monitor**:
+   - **Monitor Type**: `HTTP(s)`
+   - **Friendly Name**: `Ti Maria API`
+   - **URL**: `https://SEU-URL.onrender.com/api/health` (o URL do Render do Passo 2.6 + `/api/health`)
+   - **Monitoring Interval**: `5 minutes`
+3. **Create Monitor**.
+
+O UptimeRobot visita o backend de 5 em 5 minutos e o Render nunca adormece — o site abre sempre rápido. O plano grátis chega (50 monitores). Bónus: recebe um email se o site alguma vez ficar em baixo.
+
+> O endpoint `/api/health` já existe no backend de propósito para isto — é leve e não toca na base de dados.
+
+---
+
 ## Notas importantes
 
 - **Domínio próprio**: se comprar `tabernatimaria.pt`, liga-se grátis na Vercel (Settings → Domains). Depois atualize o `FRONTEND_URL` no Render para o domínio novo.

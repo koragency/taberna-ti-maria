@@ -216,6 +216,11 @@ async def root():
     return {"message": "Taberna Ti Maria API"}
 
 
+@api_router.get("/health")
+async def health():
+    return {"status": "ok"}
+
+
 @api_router.get("/menu")
 async def get_menu():
     items = await db.menu_items.find({}, {"_id": 0}).sort("order", 1).to_list(500)
