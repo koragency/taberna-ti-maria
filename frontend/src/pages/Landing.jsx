@@ -5,6 +5,7 @@ import Gallery from "@/components/Gallery";
 import Legend from "@/components/Legend";
 import Chef from "@/components/Chef";
 import Contact from "@/components/Contact";
+import Partners from "@/components/Partners";
 import Footer from "@/components/Footer";
 import { AzulejoStrip, SwimmingSardine } from "@/components/Sardine";
 
@@ -21,6 +22,7 @@ export default function Landing() {
       <Chef />
       <AzulejoStrip color="#2B5FAB" />
       <Contact />
+      <Partners />
       <Footer />
     </main>
   );

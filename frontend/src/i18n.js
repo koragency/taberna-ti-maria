@@ -83,6 +83,11 @@ export const translations = {
       hoursNote: "Domingo · 09h00–17h00 · Segunda: fechado — a taberna dorme.",
       maps: "Ver no mapa",
     },
+    partners: {
+      kicker: "Parcerias",
+      title: "Com quem caminhamos",
+      sub: "A Ti Maria não cresce sozinha — obrigado a quem acredita neste projeto.",
+    },
     footer: {
       slogan: "ÓOOOH Ti Maria, tens cá disto?",
       rights: "Taberna Ti Maria — Lagos, Algarve",
@@ -170,6 +175,11 @@ export const translations = {
       hours: "Tue–Sat · 9:00–21:00",
       hoursNote: "Sunday · 9:00–17:00 · Monday: closed — the tavern sleeps.",
       maps: "Open in maps",
+    },
+    partners: {
+      kicker: "Partners",
+      title: "Those who walk with us",
+      sub: "Ti Maria doesn't grow alone — thank you to everyone who believes in this project.",
     },
     footer: {
       slogan: "OOOH Ti Maria, got any of this?",
