@@ -37,7 +37,7 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 - Placeholders a substituir: telefone (+351 282 123 456) e morada (Travessa da Ti Maria, nº 54) são fictícios; foto do chef é de stock.
 
 ## Credenciais
-- Ver /app/memory/test_credentials.md (admin: angelo@timaria.pt / TiMaria1954!)
+- Ver /app/memory/test_credentials.md (admin: tabernatimaria@gmail.com / Timaria@1954! — atualizado 2026-10-09)
 
 ## Backlog
 - P0: substituir telefone/morada pelos reais. (foto real aplicada; contactos ATUAIS: +351 927 915 314 e Tv. Dom Vasco da Gama 11, Lagos — WhatsApp wa.me/351927915314, atualizado 2026-09-24)
