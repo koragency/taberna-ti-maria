@@ -21,6 +21,11 @@ Website para taberna de petiscos, vinhos e cerveja em Lagos (Algarve). Logotipo 
 - Sardinhas flutuantes multicoloridas no herói; faixa marquee terracota com sardinhas amarelas; secção do Chef em amarelo suave; secção de contactos em rosa com cartões translúcidos; rodapé azul profundo.
 - Painel admin também passou a tema claro.
 
+## Deploy gratuito (2026-10-09)
+- Preparada migração para alojamento grátis: `frontend/vercel.json` (SPA rewrite + CI=false), `render.yaml` (blueprint do backend FastAPI, plano free, health check /api/), `backend/runtime.txt` (python 3.12.4), e guia completo `/app/DEPLOY-GRATIS.md` (Atlas M0 + Render + Vercel, env vars, CORS, custos/limites).
+- Build de produção verificado: `yarn build` OK, 19MB (média incluída), 0 warnings.
+- Pendente do utilizador: Save to GitHub, criar contas Atlas/Render/Vercel e seguir o guia.
+
 ## Personas
 - Visitante local/turista: quer ver ementa, história e telefone para reservar (PT ou EN).
 - Sr. Ângelo (admin): edita pratos, preços e disponibilidade sem saber de tecnologia.
