@@ -44,7 +44,7 @@ export default function Hero() {
             </defs>
             <text fill="#D96B43" fillOpacity="0.75" style={{ fontSize: "9.2px", letterSpacing: "2.6px", fontFamily: "'JetBrains Mono', monospace" }}>
               <textPath href="#ti-maria-ring">
-                PETISCOS · VINHOS DO ALGARVE · CERVEJA FRESCA · LAGOS · DESDE 1954 ·
+                PETISCOS · VINHOS · CERVEJA FRESCA · LAGOS · DESDE 1954 ·
               </textPath>
             </text>
           </svg>
